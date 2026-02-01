@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patients</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <header class="nav">
+    <div style="font-weight: 700; color: var(--primary-color); font-size: 1.25rem;">Hospital Admin</div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="schedules.html">Schedules</a>
+      <a href="patients.html" class="active">Patients</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Patients Registry</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">A complete list of patients registered in the system.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Email Address</th>
+            <th>System Role</th>
+          </tr>
+        </thead>
+        <tbody id="patientsTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script type="module" src="../js/admin/manage-patients.js"></script>
+</body>
+</html>

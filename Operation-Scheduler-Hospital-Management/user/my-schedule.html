@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Schedule</title>
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <header class="nav">
+    <div style="font-weight: 700; color: var(--primary-color); font-size: 1.25rem;">Patient Portal</div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="my-schedule.html" class="active">My Schedule</a>
+      <a href="profile.html">My Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>My Operation Schedule</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Keep track of your upcoming and past surgical procedures.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor</th>
+            <th>Operation</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="myScheduleTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script type="module" src="../js/user/view-schedule.js"></script>
+</body>
+</html>

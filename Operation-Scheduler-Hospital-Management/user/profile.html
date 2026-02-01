@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <header class="nav">
+    <div style="font-weight: 700; color: var(--primary-color); font-size: 1.25rem;">Patient Portal</div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="my-schedule.html">My Schedule</a>
+      <a href="profile.html" class="active">My Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card profile-card" style="max-width: 500px; margin: 0 auto;">
+      <h2>Personal Profile</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Keep your contact information up to date.</p>
+      
+      <form id="profileForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="john@example.com" disabled style="background: var(--bg-main); cursor: not-allowed;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Update Profile</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="../js/user/profile.js"></script>
+</body>
+</html>

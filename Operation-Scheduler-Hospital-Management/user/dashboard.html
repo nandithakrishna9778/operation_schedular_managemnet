@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <header class="nav">
+    <div style="font-weight: 700; color: var(--primary-color); font-size: 1.25rem;">Patient Portal</div>
+    <nav class="nav-links">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="my-schedule.html">My Schedule</a>
+      <a href="profile.html">My Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Welcome to Your Dashboard</h2>
+      <p style="color: var(--text-muted);">View your upcoming procedures and manage your health profile.</p>
+    </div>
+
+    <div id="userSummary"></div>
+  </main>
+
+  <script type="module" src="../js/user/user-dashboard.js"></script>
+</body>
+</html>

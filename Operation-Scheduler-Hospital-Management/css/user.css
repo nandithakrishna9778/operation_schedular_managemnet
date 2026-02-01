@@ -1,0 +1,12 @@
+@import url('main.css');
+
+.user-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
